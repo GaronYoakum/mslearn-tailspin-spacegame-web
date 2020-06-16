@@ -46,5 +46,6 @@ steps:
     arguments: '--no-build --configuration ${{ parameters.buildConfiguration }} --output $(Build.ArtifactStagingDirectory)/${{ parameters.buildConfiguration }}'
     zipAfterPublish: true
 
-  - task: WhiteSource Bolt@20
+- task: WhiteSource Bolt@20
   displayName: 'Run WhiteSource Bolt'
+  
